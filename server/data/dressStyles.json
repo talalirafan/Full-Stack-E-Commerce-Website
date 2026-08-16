@@ -1,0 +1,6 @@
+[
+  { "id": 1, "name": "Casual", "image": "/images/styles/casual.jpg", "category": "casual" },
+  { "id": 2, "name": "Formal", "image": "/images/styles/formal.jpg", "category": "formal" },
+  { "id": 3, "name": "Party", "image": "/images/styles/party.jpg", "category": "party" },
+  { "id": 4, "name": "Gym", "image": "/images/styles/gym.jpg", "category": "gym" }
+]

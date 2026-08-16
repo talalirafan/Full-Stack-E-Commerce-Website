@@ -1,0 +1,224 @@
+.pd {
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+.pd__status {
+  padding: 3rem 0;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+.pd__top {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 2.5rem;
+}
+
+.pd__info h1 {
+  font-size: 1.9rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.pd__stars {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.star {
+  color: var(--color-border);
+}
+
+.star--filled {
+  color: var(--color-star);
+}
+
+.pd__rating-value {
+  margin-left: 0.4rem;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+.pd__price {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.pd__price .price {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.pd__price .price--old {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  text-decoration: line-through;
+}
+
+.pd__description {
+  margin-top: 1rem;
+  color: var(--color-text-muted);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 1.25rem;
+}
+
+.pd__section {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.pd__section h4 {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.9rem;
+}
+
+.pd__colors {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.swatch {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+.swatch--active {
+  outline: 2px solid var(--color-text);
+  outline-offset: 2px;
+}
+
+.badge-discount {
+  background: var(--color-discount-bg);
+  color: var(--color-discount-text);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-full);
+}
+
+.pd__sizes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.pd__sizes button {
+  padding: 0.65rem 1.25rem;
+  border-radius: var(--radius-full);
+  border: none;
+  background: var(--color-bg-soft);
+  font-size: 0.9rem;
+}
+
+.pd__sizes button.active {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.pd__actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.pd__qty {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  background: var(--color-bg-soft);
+  border-radius: var(--radius-full);
+  padding: 0.75rem 1.25rem;
+}
+
+.pd__qty button {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+}
+
+.pd__add-to-cart {
+  flex: 1;
+}
+
+.pd__add-status {
+  margin-top: 0.9rem;
+  font-size: 0.9rem;
+}
+
+.pd__add-status--success {
+  color: #2ecc71;
+}
+
+.pd__add-status--error {
+  color: #ff3333;
+}
+
+.pd__add-status a {
+  font-weight: 600;
+  text-decoration: underline;
+  margin-left: 0.4rem;
+}
+
+.pd__reviews-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.pd__reviews-header h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.pd__reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.pd__reviews-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.pd__related {
+  margin-top: 3.5rem;
+}
+
+.pd__related-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem 1.25rem;
+}
+
+@media (max-width: 900px) {
+  .pd__top {
+    grid-template-columns: 1fr;
+  }
+
+  .pd__reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pd__related-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

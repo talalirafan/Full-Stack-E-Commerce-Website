@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1001,
+    "productId": 9,
+    "size": "Large",
+    "color": "White",
+    "quantity": 1
+  },
+  {
+    "id": 1002,
+    "productId": 3,
+    "size": "Medium",
+    "color": "Red",
+    "quantity": 1
+  },
+  {
+    "id": 1003,
+    "productId": 2,
+    "size": "Large",
+    "color": "Blue",
+    "quantity": 1
+  },
+  {
+    "id": 1786918432216,
+    "productId": 4,
+    "size": "Small",
+    "color": "#c1440e",
+    "quantity": 1
+  }
+]
