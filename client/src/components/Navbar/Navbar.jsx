@@ -154,7 +154,7 @@ function Navbar() {
               )}
             </div>
           ) : (
-            <Link to="/signup" aria-label="Account" className="icon-btn">
+            <Link to="/login" aria-label="Account" className="icon-btn">
               👤
             </Link>
           )}

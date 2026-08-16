@@ -42,4 +42,28 @@ router.post("/signup", async (req, res) => {
   res.status(201).json({ user: safeUser });
 });
 
+// POST /api/auth/login - { email, password }
+router.post("/login", async (req, res) => {
+  const { email, password } = req.body;
+
+  if (!email || !password) {
+    return res.status(400).json({ message: "Email and password are required." });
+  }
+
+  const users = readData("users.json");
+  const user = users.find((u) => u.email.toLowerCase() === email.toLowerCase());
+
+  if (!user) {
+    return res.status(401).json({ message: "Invalid email or password." });
+  }
+
+  const match = await bcrypt.compare(password, user.passwordHash);
+  if (!match) {
+    return res.status(401).json({ message: "Invalid email or password." });
+  }
+
+  const { passwordHash: _omit, ...safeUser } = user;
+  res.json({ user: safeUser });
+});
+
 module.exports = router;

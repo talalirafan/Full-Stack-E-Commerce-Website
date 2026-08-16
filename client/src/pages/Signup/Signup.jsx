@@ -137,7 +137,7 @@ function Signup() {
           )}
 
           <p className="signup__login-link">
-            Already have an account? <Link to="/">Continue shopping</Link>
+            Already have an account? <Link to="/login">Log in</Link>
           </p>
         </div>
       </main>
